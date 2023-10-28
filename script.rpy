@@ -26,4 +26,4 @@ label start:
         "Знакомый сосед по комнате":
             jump timur
         "Дружелюбная однокурсница":
-            jump jenya
+            jump jenya_cp1
