@@ -77,18 +77,18 @@ label jenya_cp2:
     "Затягивает [mcname] в комнату, забывая про беспорядок"
     "[mcname] вызывается помочь Жени собрать вещи для гадания"
     "далее идет мини-игра в зависимости от баллов"
-    if relate_jenya>relate_eva:
-        r "при гадании карты скажут что-то связанное с Женей"
+    if relate_jenya>relate_eve:
+        "при гадании карты скажут что-то связанное с Женей"
         return
-    if relate_eva>relate_jenya:
-        r "при гадании карты скажут что-то связанное с Eвой"
+    if relate_eve>relate_jenya:
+        "при гадании карты скажут что-то связанное с Eвой"
         return
 
 
     if relate_jenya>0:
         r "Женя даёт [mcname] оберег(с баночкой или камушком)"
         return
-    if relate_jenya<0:
+    if relate_jenya=0:
         r "У Жени заурчит живот. Женя и [mcname] вместе готовят обед)"
         return
 
